@@ -5,6 +5,7 @@ import java.util.Date;
 public class AlarmChain {
 
     public static void main(String[] args) {
+        System.out.println("AlarmChain start");
         ProcessData processData = new ProcessData();
         processData.setDataDate(new Date());
 
@@ -18,5 +19,6 @@ public class AlarmChain {
         judgeProcess.setNextProcess(notifyProcess);
 
         aggregateProcess.goProcess(processData);
+        System.out.println("AlarmChain end");
     }
 }

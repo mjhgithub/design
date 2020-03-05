@@ -12,4 +12,6 @@ public class ProcessData {
     private String nodeId;
 
     private Date dataDate;
+
+    private boolean alarm;
 }

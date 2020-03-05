@@ -4,6 +4,9 @@ public class NotifyProcess extends AbstractProcess {
 
     @Override
     protected void doOperate(ProcessData processData) {
-        System.out.println("NotifyProcess");
+        if (false == processData.isAlarm()) {
+            return;
+        }
+        System.out.println("NotifyProcess alarm");
     }
 }

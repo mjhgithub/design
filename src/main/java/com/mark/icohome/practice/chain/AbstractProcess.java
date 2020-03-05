@@ -15,7 +15,7 @@ public abstract class AbstractProcess {
         if (null != nextProcess) {
             nextProcess.goProcess(processData);
         }
-        System.out.println("AbstractProcess finish");
+//        System.out.println("AbstractProcess finish");
     }
 
     abstract protected void doOperate(ProcessData processData);
